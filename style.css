@@ -1,0 +1,20 @@
+#Main {
+    display: flex;
+    flex-direction: column;
+}
+.Grid-Container {
+    border: solid red;
+    display: inline-block;
+    width: 440px;
+}
+.Squares {
+    background-color: yellowgreen;
+    border: solid black;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0;
+}
+.Button {
+    width: 100px;
+}
