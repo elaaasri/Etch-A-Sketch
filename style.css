@@ -2,10 +2,13 @@
     display: flex;
     flex-direction: column;
 }
-.Grid-Container {
+#Grid-Container {
     border: solid red;
     display: inline-block;
     width: 440px;
+    height: 450px;
+    flex-shrink: 1;
+    flex-grow: 0;
 }
 .Squares {
     background-color: yellowgreen;
@@ -18,3 +21,4 @@
 .Button {
     width: 100px;
 }
+
