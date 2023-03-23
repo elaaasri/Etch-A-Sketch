@@ -4,21 +4,17 @@
 }
 #Grid-Container {
     border: solid red;
-    display: inline-block;
-    width: 440px;
-    height: 450px;
-    flex-shrink: 1;
-    flex-grow: 0;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    width: 500px;
+    height: 500px;
 }
 .Squares {
     background-color: yellowgreen;
-    border: solid black;
-    width: 20px;
-    height: 20px;
-    float: left;
+    border: 1px solid red;
     margin: 0;
 }
 .Button {
     width: 100px;
 }
-
