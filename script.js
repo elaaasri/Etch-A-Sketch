@@ -28,6 +28,7 @@ settingsContainer.appendChild(eraserButton);
 let colorMode = document.createElement("input");
 colorMode.className = "color-mode";
 colorMode.type = "color";
+colorMode.textContent = "azeazpoekapozek"
 settingsContainer.appendChild(colorMode);
 // Clear Button : 
 let clearButton = document.createElement("button");
@@ -83,13 +84,6 @@ clearButton.addEventListener("click", () => {
     let allSquares = document.querySelectorAll(".squares");
     allSquares.forEach(square => square.remove());
 });
-
-
-
-
-
-
-
 
 
 

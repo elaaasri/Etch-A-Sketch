@@ -1,5 +1,19 @@
 body {
-    background: linear-gradient(to right, rgb(137, 9, 173),rgb(192, 13, 195),rgb(210, 20, 83),rgb(246, 126, 46));
+    background-image: linear-gradient(to left, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    margin: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    font-family: "Delicious Handrawn";
+    font-style: italic;
+}
+h1 {
+    text-shadow: 5px 5px 5px rgb(245, 192, 255);
+    font-size: 50px;
+    letter-spacing: 2rem;
 }
 .main {
     display: flex;
@@ -24,8 +38,7 @@ body {
 }
 /* Settings Styles */
 .settings {
-    border: solid black;
-    /* background-color: red; */
+    background-color: white;
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -63,4 +76,19 @@ background: rgb(172, 77, 250);
 border: 3px solid black;
 border-radius: 50%;
 cursor: pointer;
+}
+.random-color,
+.eraser,
+.clear-button {
+    background-color: #f1f1f1;
+    width: 40%;
+    height: 12%;
+    border: solid 2px black;
+    border-radius: 20px;
+    font-family: "Delicious Handrawn";
+    font-size: 23px;
+    font-weight: bold;
+}
+.color-mode {
+    background-color: red;
 }
