@@ -1,20 +1,62 @@
-#Main {
+body {
+    background: linear-gradient(to right, rgb(137, 9, 173), rgb(192, 13, 195),rgb(210, 20, 83),rgb(246, 126, 46));
+}
+.main {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
 }
-#Grid-Container {
-    border: solid red;
+/* Grid Container And Squares :  */
+.grid-container {
+    border: solid black;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
+    flex-shrink: 0;
+    margin-right: 300px;
 }
-.Squares {
-    background-color: yellowgreen;
-    border: 1px solid red;
-    margin: 0;
+.squares {
+    border: 1px solid rgb(79, 23, 134);
+    border-radius: 4px;
+    margin: 0; 
 }
-.Button {
-    width: 100px;
+/* Settings Styles */
+.settings {
+    /* background-color: red; */
+    width: 300px;
+    height: 300px;
+    /* margin-left: 0; */
+    /* margin-right: 0; */
+}
+/* Button Styles */
+.slider {
+width: 150px;
+padding-left: 40px;
+border-radius: 20px;
+display: flex;
+align-items: center;
+box-shadow: 0px 15px 40px #7E6D5766;
+}
+.slider p {
+font-size: 20px;
+font-weight: 600;
+font-family: Open Sans;
+padding-left: 30px;
+color: black;
+}
+.slider input[type="range"] {
+-webkit-appearance:none !important;
+height: 2px;
+background: black;
+}
+.slider input[type="range"]::-webkit-slider-thumb {
+-webkit-appearance: none !important;
+width: 30px;
+height: 30px;
+background: rgb(172, 77, 250);
+border: 3px solid black;
+border-radius: 50%;
+cursor: pointer;
 }
