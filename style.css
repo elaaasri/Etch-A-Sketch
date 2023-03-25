@@ -11,41 +11,38 @@ header {
     font-style: italic;
 }
 h1 {
-    text-shadow: 5px 5px 5px rgb(245, 192, 255);
+    text-shadow: 10px 10px 10px rgb(119, 107, 207);
     font-size: 50px;
-    letter-spacing: 2rem;
+    letter-spacing: 1rem;
 }
 .main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 100px;
 }
 /* Grid Container And Squares :  */
 .grid-container {
-    border: solid black;
     display: grid;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     flex-shrink: 0;
     margin-right: 300px;
 }
 .squares {
     border: 1px solid rgb(79, 23, 134);
-    border-radius: 4px;
+    border-radius: 5px;
     margin: 0; 
 }
 /* Settings Styles */
 .settings {
-    background-color: white;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 300px;
     height: 500px;
     justify-content: center;
     align-items: center;
-    gap: calc(10%);
+    gap: calc(3%);
 }
 /* Button Styles */
 .slider {
@@ -56,30 +53,31 @@ display: flex;
 align-items: center;
 box-shadow: 0px 15px 40px #7E6D5766;
 }
-.slider p {
+.slider > p {
 font-size: 20px;
 font-weight: 600;
 font-family: Open Sans;
 padding-left: 30px;
 color: black;
 }
-.slider input[type="range"] {
+.slider > input[type="range"] {
 -webkit-appearance:none !important;
 height: 2px;
 background: black;
 }
-.slider input[type="range"]::-webkit-slider-thumb {
+.slider > input[type="range"]::-webkit-slider-thumb {
 -webkit-appearance: none !important;
-width: 30px;
-height: 30px;
-background: rgb(172, 77, 250);
-border: 3px solid black;
+width: 25px;
+height: 25px;
+background-image: linear-gradient(to left, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+border: 2px solid black;
 border-radius: 50%;
 cursor: pointer;
 }
 .random-color,
-.eraser,
-.clear-button {
+.eraser-button,
+.clear-button,
+.color-mode {
     background-color: #f1f1f1;
     width: 40%;
     height: 12%;
@@ -88,7 +86,37 @@ cursor: pointer;
     font-family: "Delicious Handrawn";
     font-size: 23px;
     font-weight: bold;
+    background-color: inherit;
 }
-.color-mode {
-    background-color: red;
+.random-color,
+.color-input {
+    background-image: linear-gradient(to left, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+.random-color:active {
+    background :linear-gradient(to right, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    border: white;
+}
+.clear-button:active,
+.eraser-button:active,
+.color-mode:active {
+    background-color: wheat;
+}
+.color-input[type="color"] {
+    width: 50px;
+    height: 50px;
+}
+/* Footer Styles */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-family: "Delicious Handrawn";
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.footer > p {
+    font-size: 40px;
+    margin: 0;
+    font-style: italic;
 }
