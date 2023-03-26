@@ -14,10 +14,22 @@
     <header class="header">
         <h1>Etch & Sketch</h1>
     </header>
-    <div class="slider">
-        <input type="range" min="1" max="64" value="16" oninput="rangeValue.innerText = this.value">
-        <p id="rangeValue">16</p>
-    </div>
+    
+    <main class="main"> 
+        <div class="settings">
+            <div class="slider">
+                <input type="range" min="1" max="64" value="16" oninput="rangeValue.innerText = this.value">
+                <p id="rangeValue">16</p>
+            </div>
+            <input class="color-input" type="color"></input>
+            <button class="color-mode">Color Mode</button>
+            <button class="random-color">RainBow Mode</button>
+            <button class="eraser-button">Eraser</button>
+            <button class="clear-button">Clear</button>
+        </div>
+        <div class="grid-container"></div>
+    </main>
+
     <footer class="footer">
         Copyright © &nbsp;
         <p>elaaasri</p>
