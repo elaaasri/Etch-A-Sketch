@@ -1,6 +1,4 @@
-let mainDiv = document.querySelector(".main");
 let gridContainer = document.querySelector(".grid-container");
-let settingsContainer = document.querySelector(".settings");
 let slider = document.querySelector(".slider");
 let numbersOfSquares = document.querySelector("p");
 let colorMode = document.querySelector(".color-mode");
